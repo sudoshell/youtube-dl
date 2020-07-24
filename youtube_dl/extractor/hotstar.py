@@ -123,8 +123,8 @@ class HotStarIE(HotStarBaseIE):
 
         title = video_data['title']
 
-        if video_data.get('drmProtected'):
-            raise ExtractorError('This video is DRM protected.', expected=True)
+        # if video_data.get('drmProtected'):
+        #     raise ExtractorError('This video is DRM protected.', expected=True)
 
         headers = {'Referer': url}
         formats = []
